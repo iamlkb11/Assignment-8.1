@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html><!-- Head of the Root -->
+	<head><!-- child sub root of the html tag as head tag  -->
+    	<!-- it is a title tag -->
+		<title>Form</title>
+		<style type="text/css">
+		/*Applying basic style to h1 and body contents*/
+			h1
+			{
+				color:blue;
+				font-size: 30px;
+				font-family: arial;
+				text-decoration: underline;
+			}
+			body
+			{
+				font-size: 18px;
+				font-family: sans-serif;
+			}
+			input:required 
+			{
+  				border-color: #FF0000;
+  				border-width: 3px;
+			}
+			#container
+			{
+				background-color: #eaeaea;
+				float: left;
+				width: 100%;
+			}
+			#Register
+			{
+				background-color: #eaeaea;
+				float:left;
+				width:50%;
+			}
+			#Login
+			{
+				background-color: #002663;
+				color: white;
+				float: left;
+				width: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<h1>Student login form:</h1>
+		<hr>
+		<!--Parent div will hold the child div containers-->
+		<div id="container">
+		<p style="font-weight: bold;color: #002663;font-size: 25px;">Enter the system</p>
+		<p style="color: #adabab;font-size: 14px;">It is necessary to login in your account in order to sign up for a course</p>
+		<!-- child 1 container -->
+			<div id="Register">
+				<span style="width: 90%;display: block;margin-top: 5%;margin-left: 5%;"><span style="color: #565656;font-weight: bold;">ARE YOU NEW?</span> <span style="font-weight: bold;color: #002663;">REGISTER</span></span><br>
+				<form>
+					<input type="text" style="width: 90%;display: block;margin: auto;" name="usrField" placeholder="User Name" required><br><br>
+					<input type="email" style="width: 90%;display: block;margin: auto;" name="emailField" placeholder="Email" required><br><br>
+					<input type="password" style="width: 90%;display: block;margin: auto;" name="pwdField" placeholder="Password" required><br><br>
+					<input type="password" style="width: 90%;display: block;margin: auto;" name="confirmPwdField" placeholder="Confirm Password" required><br><br>
+					<input type="button" style="float:right;display: block;margin-right: 5%;background-color:#eaeaea;border: 2px solid #002663; " name="regButton" value="Register"><br><br>
+				</form>
+			</div>
+			<!-- child 2 container -->
+			<div id="Login">
+				<span style="width: 90%;display: block;margin-top: 5%;margin-left: 5%;">ALREADY A STUDENT? LOGIN</span><br>
+					<form>
+						<input type="text" style="width: 90%;display: block;display: block;margin: auto;" name="loginUsrField" placeholder="User name" required/><br><br>
+						<input type="password" style="width: 90%;display: block;margin: auto;" name="loginPwdField" placeholder="Password" required><br><br>
+						<input type="checkbox" style="float:left;display: block;margin-left: 5%;" name="RememberMe" value="Remember">Remember Me?
+						<input type="button" style="float:right;margin-right: 5%;" value="Login"><br><br>
+						<a href="https://google.com" style="float:right;margin-right: 5%;font-size: 9px;color: white;">Forgot Password</a><br><br><br><br><br>
+					</form>
+			</div>
+		</div>
+	</body>
+</html>
